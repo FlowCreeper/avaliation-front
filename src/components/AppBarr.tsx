@@ -33,12 +33,10 @@ export default function CustomAppBar() {
 
   const menuItems = [
     { label: 'Projetos', path: '/projetos' },
-    { label: 'Osso de tras', path: '/backbone' },
+    { label: 'Osso de trás', path: '/backbone' },
     { label: 'Uai Fai', path: '/wifi' },
     { label: 'tabela ARP', path: '/tabelaARP' },
-    { label: 'protocolos', path: '/pacotes' },
-    { label: 'RFC', path: '/assinaturas' },
-    { label: 'demonstração de Rede', path: '/pagamento' },
+    { label: 'RFC', path: '/rfc' },
   ];
 
   return (
@@ -47,7 +45,7 @@ export default function CustomAppBar() {
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
           {/* Nome do site */}
           <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
-            <Button color="inherit" sx={{ fontWeight: 'bold' }} component={Link} href="/servicos">
+            <Button color="inherit" sx={{ fontWeight: 'bold' }} component={Link} href="/">
               V1 - Redes
             </Button>
           </Typography>
