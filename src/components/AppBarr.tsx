@@ -32,8 +32,9 @@ export default function CustomAppBar() {
   };
 
   const menuItems = [
-    { label: 'Projetos', path: '/clientes' },
-    { label: 'console', path: '/console' },
+    { label: 'Projetos', path: '/projetos' },
+    { label: 'Osso de tras', path: '/backbone' },
+    { label: 'Uai Fai', path: '/wifi' },
     { label: 'tabela ARP', path: '/tabelaARP' },
     { label: 'protocolos', path: '/pacotes' },
     { label: 'RFC', path: '/assinaturas' },
@@ -46,15 +47,12 @@ export default function CustomAppBar() {
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
           {/* Nome do site */}
           <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
-            ACME
+            <Button color="inherit" sx={{ fontWeight: 'bold' }} component={Link} href="/servicos">
+              V1 - Redes
+            </Button>
           </Typography>
 
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            {/* Link para página de serviços */}
-            <Button color="inherit" sx={{ fontWeight: 'bold' }} component={Link} href="/servicos">
-              Conhecer nossos serviços
-            </Button>
-
             {/* Botão de menu */}
             <IconButton edge="end" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
               <MenuIcon />
